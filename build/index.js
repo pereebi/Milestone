@@ -13,7 +13,7 @@ var app = (0, express_1.default)();
 // port decleared
 var PORT = 5050;
 // get method
-app.use('/api', routes_1.default);
+app.use("/api", routes_1.default);
 // listening on the port
 app.listen(PORT, function () {
     console.log("Listening on port ".concat(PORT));

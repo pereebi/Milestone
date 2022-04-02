@@ -11,5 +11,8 @@ var logger = function (req, res, next) {
     console.log(vistedRoute);
     next();
 };
+routes.get('/', function (req, res) {
+    res.send("Just saying Hi");
+});
 routes.use('/', logger, resize_1.default);
 exports.default = routes;
